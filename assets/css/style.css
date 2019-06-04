@@ -1,6 +1,95 @@
 img
 {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
 }
 
+#imagesDiv
+{
+    text-align: center;
+    /* background-color: midnightblue; */
+    width: 340px;
+}
+
+#favoritesDiv
+{
+    padding-top: 2px;
+    text-align: center;
+    background-color: gold;
+}
+
+.gif
+{
+    opacity: 1;
+    margin: 0px 5px;
+}
+
+p
+{
+    /* margin-left: 80px; */
+    /* width: 100px; */
+    text-align: center;
+    font-size: 20px;
+}
+
+#images
+{
+    margin-top: 40px;
+}
+
+.favorites
+{
+    margin-bottom: 20px;
+}
+
+h1
+{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+button
+{
+    padding: 5px;
+    margin: 0px 5px;
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+#topicDiv
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#buttonsDiv
+{
+    text-align: center;
+}
+
+#favoriteTitle
+{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold; 
+    margin-bottom: 5px;
+    color: yellow;
+}
+
+.favorites
+{
+    background-color: gold;
+    color: white;
+    border-color: gold;
+}
+
+body
+{
+    background-color: black;
+    color: white;
+    font-family: 'Ranga', cursive;
+}
