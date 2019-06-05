@@ -18,13 +18,17 @@ topicButton.text("New Topic");
 $("#topicDiv").append(userInput);
 $("#topicDiv").append(topicButton);
 
+//When clicked, calls function to get gifs
 $(document).on("click", ".topic", function()
 {
     var searchTerm = this.innerHTML;
     console.log(searchTerm);
+
+    //Using the text from the button, calls the getGif function
     getGif(searchTerm);
 })
 
+//When clicked, pauses, or unpauses the gif.
 $(document).on("click", ".gif", function()
 {
     var state = $(this).attr("data-state");
@@ -40,11 +44,14 @@ $(document).on("click", ".gif", function()
     }
 })
 
+//When clicked, adds the imageId to the favorites array and reloads the div
 $(document).on("click", ".favorites", function()
 {
     var imageId = $(this).attr("gifId");
     favorites.push(imageId);
     $("#favoritesDiv").empty();
+
+    //For every item in the favorites array, add to the div
     for (i = 0; i < favorites.length; i++)
     {
         var queryURL = "https://api.giphy.com/v1/gifs/" + favorites[i] + "?api_key=5tQ9UTo8mjRwwFkXBekijv4vt8KzKW9t";
@@ -74,6 +81,7 @@ $("#create").on("click", function()
     }
 })
 
+//Changes the opacity when you hover over the image
 $(document).on("mouseenter", ".gif", function()
 {
     $(this).css("opacity", 0.8);
